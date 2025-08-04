@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo App</title>
+</head>
+<body>
+  <h1>My ToDo List</h1>
+
+  <form action="/add" method="POST">
+    <input type="text" name="task" placeholder="Add task..." required />
+    <button type="submit">Add</button>
+  </form>
+
+  <ul>
+    <% todos.forEach(todo => { %>
+      <li>
+        <%= todo.task %> 
+        <a href="/delete/<%= todo.id %>">❌</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
