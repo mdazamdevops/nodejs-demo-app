@@ -10,7 +10,7 @@
 *.sock
 .env.*
 docker-compose.override.yml
-
+package-lock.json
 # Python bytecode
 __pycache__/
 *.py[cod]
